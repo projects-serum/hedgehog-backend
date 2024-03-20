@@ -1,8 +1,8 @@
 const ethers = require("ethers")
 const abi = require("./abi.json")
-const provider = new ethers.JsonRpcProvider("https://base-sepolia-rpc.publicnode.com")
+const provider = new ethers.JsonRpcProvider("https://base-pokt.nodies.app")
 const wallet = new ethers.Wallet(process.env.PK).connect(provider)
-const contract = new ethers.Contract("0x2f847Dbf9f0F14b98b9053bFd49B52d4e1f84cD3", abi, wallet)
+const contract = new ethers.Contract("0x87F25e688403CA03746EC68fEF61AF0EAed11e4C", abi, wallet)
 require('dotenv').config();
 
 async function main() {
